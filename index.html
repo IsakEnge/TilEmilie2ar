@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <title>2 år med deg ♡</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">♡ 2 år med deg</div>
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Åpne meny">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#hero">Start</a></li>
+        <li><a href="#story">Vår historie</a></li>
+        <li><a href="#gallery">Bilder</a></li>
+        <li><a href="#love">Deg</a></li>
+        <li><a href="#letter">Til deg</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO / FORSIDE -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <div class="floating-heart heart-1"></div>
+      <div class="floating-heart heart-2"></div>
+      <div class="floating-heart heart-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-image-wrapper">
+        <img src="images/hero.png" alt="Oss to" onerror="this.classList.add('img-placeholder')" />
+      </div>
+      <div class="hero-text">
+        <h1>2 år med deg ♡</h1>
+        <p class="hero-date">22.09.2024 — 22.09.2026</p>
+        <p class="hero-sub">Dette er til verdens beste jente i hele verden!</p>
+        <button class="primary-btn" id="startJourneyBtn">Start reisen ♡</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- VÅR HISTORIE / TIDSLINJE -->
+  <section id="story" class="section story">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>Vår historie</h2>
+        <p>De to beste åra i hele livet mitt!!!</p>
+      </div>
+
+      <div class="timeline-wrapper">
+        <div class="timeline-line"></div>
+        <div class="timeline-points" id="timelinePoints"></div>
+      </div>
+
+      <div class="timeline-card-wrapper">
+        <div class="timeline-card" id="timelineCard">
+          <div class="timeline-card-image">
+            <img id="timelineCardImage" src="" alt="Minne" onerror="this.classList.add('img-placeholder')" />
+          </div>
+          <div class="timeline-card-content">
+            <p class="timeline-card-date" id="timelineCardDate"></p>
+            <h3 class="timeline-card-title" id="timelineCardTitle"></h3>
+            <p class="timeline-card-text" id="timelineCardText"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VÅRE ØYEBLIKK / GALLERI -->
+  <section id="gallery" class="section gallery">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>Noen av favorittøyeblikkene mine</h2>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Lukk">&times;</button>
+      <img id="lightboxImage" src="" alt="Galleri-bilde" onerror="this.classList.add('img-placeholder')" />
+      <div class="lightbox-controls">
+        <button id="lightboxPrev">Forrige</button>
+        <button id="lightboxNext">Neste</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- DET JEG ELSKER VED DEG -->
+  <section id="love" class="section love">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>Det er så mye jeg elsker ved deg! </h2>
+      </div>
+
+      <div class="love-cards" id="loveCards"></div>
+
+      <div class="love-more">
+        <button class="secondary-btn" id="showMoreLoveBtn">Vis meg mer ♡</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ET LITE BREV TIL DEG -->
+  <section id="letter" class="section letter">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>Til deg</h2>
+      </div>
+
+      <div class="letter-card">
+        <p id="letterText">
+            Tenk Emilie!! To år!! Det er ganske sykt! Jeg er så sinnsykt takknemlig for at jeg får <br> 
+            lov til å være sammen med deg og jeg setter så sinnsykt stor pris på alt det du gjør for meg! <br><br>
+            Jeg var helt sikker på fra dag 1 at dette forholdet var noe som kom til å vare! <br>
+            Og jeg er helt sikker på at vi kommer til å vare i mange år fremover!<br><br>   
+            Tusen takk for alle studnene jeg får ha sammen med deg Emilie!<br><br>
+            Jeg elsker deg uendelig masse!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HVOR LENGE HAR VI VÆRT SAMMEN? -->
+  <section id="counter" class="section counter">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>Og tiden går…</h2>
+        <p>Men jeg ville fortsatt valgt deg.</p>
+      </div>
+
+      <div class="counter-values" id="counterValues">
+        <div class="counter-item">
+          <span class="counter-number" id="yearsCount">0</span>
+          <span class="counter-label">år</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-number" id="monthsCount">0</span>
+          <span class="counter-label">måneder</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-number" id="daysCount">0</span>
+          <span class="counter-label">dager</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-number" id="hoursCount">0</span>
+          <span class="counter-label">timer</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-number" id="minutesCount">0</span>
+          <span class="counter-label">minutter</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-number" id="secondsCount">0</span>
+          <span class="counter-label">sekunder</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MUSIKKSPILLER -->
+  <section id="music" class="section music">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>Vår sang</h2>
+      </div>
+
+      <div class="music-player">
+        <div class="music-cover">
+          <img id="musicCover" src="images/hero.jpg" alt="Albumcover" onerror="this.classList.add('img-placeholder')" />
+        </div>
+        <div class="music-info">
+          <p class="music-title" id="musicTitle">Our Song</p>
+          <p class="music-artist" id="musicArtist">Us</p>
+          <div class="music-controls">
+            <button id="musicPlayPause">Play</button>
+            <div class="music-progress">
+              <div class="music-progress-bar" id="musicProgressBar"></div>
+            </div>
+          </div>
+        </div>
+        <audio id="musicAudio" src="music/our-song.mp3"></audio>
+      </div>
+    </div>
+  </section>
+
+  <!-- SISTE SEKSJON -->
+  <section id="final" class="section final">
+    <div class="final-inner">
+      <p class="final-line final-line-1">Hvis jeg kunne gått tilbake til begynnelsen…</p>
+      <p class="final-line final-line-2">…hadde jeg fortsatt valgt deg.</p>
+      <p class="final-line final-line-3">Gratulerer med 2 år, Emilie ❤️</p>
+      <p class="final-line final-line-4">– Isak</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
